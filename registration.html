@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Lemon menu</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <a href="#" class="navbar-brand">
+                        <img src="https://logos.textgiraffe.com/logos/logo-name/Vlad-designstyle-pastel-m.png"
+                            style="width:100px;height:100px;" </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a href="index.html" class="base-button">Menu</a>
+                        </li>
+                        <li class="nav-item"><a href="registration.html" class="base-button">Registration</a>
+                        </li>
+                        <li class="nav-item"><a href="location.html" class="base-button">Location</a>
+                        </li>
+                    </ul>
+
+                    <form class="d-md-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="base-button" type="submit">Search</button>
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="box">
+        <h1>Registration</h1>
+    </div>
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="John" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+
+            <label for="validationCustom02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" placeholder="Doe" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+
+            <label for="validationCustomUsername" class="form-label">
+                <div class="mb-3">
+                    <label for="" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId"
+                        placeholder="abc@mail.com">
+                </div>
+            </label>
+
+            <label for="validationCustom04" class="form-label">Country</label>
+            <select name="country" class="form-control" id="country">
+                <option value="0" label="Select a country ... " selected="selected">Select a country ... </option>
+                <optgroup id="country-optgroup-Africa" label="Africa">
+                    <option value="DZ" label="Algeria">Algeria</option>
+                    <option value="AO" label="Angola">Angola</option>
+                    <option value="BJ" label="Benin">Benin</option>
+                    <option value="BW" label="Botswana">Botswana</option>
+                    <option value="EG" label="Egypt">Egypt</option>
+                    <option value="GQ" label="Equatorial Guinea">Equatorial Guinea</option>
+                    <option value="ER" label="Eritrea">Eritrea</option>
+                    <option value="ET" label="Ethiopia">Ethiopia</option>
+                    <option value="GA" label="Gabon">Gabon</option>
+                    <option value="KE" label="Kenya">Kenya</option>
+                    <option value="LS" label="Lesotho">Lesotho</option>
+                    <option value="SC" label="Seychelles">Seychelles</option>
+                    <option value="SL" label="Sierra Leone">Sierra Leone</option>
+                    <option value="SO" label="Somalia">Somalia</option>
+                    <option value="ZA" label="South Africa">South Africa</option>
+                    <option value="TZ" label="Tanzania">Tanzania</option>
+                    <option value="TG" label="Togo">Togo</option>
+                    <option value="TN" label="Tunisia">Tunisia</option>
+                    <option value="UG" label="Uganda">Uganda</option>
+                    <option value="ZM" label="Zambia">Zambia</option>
+                    <option value="ZW" label="Zimbabwe">Zimbabwe</option>
+                </optgroup>
+                <optgroup id="country-optgroup-Americas" label="Americas">
+                    <option value="AI" label="Anguilla">Anguilla</option>
+                    <option value="AR" label="Argentina">Argentina</option>
+                    <option value="AW" label="Aruba">Aruba</option>
+                    <option value="BR" label="Brazil">Brazil</option>
+                    <option value="VG" label="British Virgin Islands">British Virgin Islands</option>
+                    <option value="CA" label="Canada">Canada</option>
+                    <option value="KY" label="Cayman Islands">Cayman Islands</option>
+                    <option value="CL" label="Chile">Chile</option>
+                    <option value="CO" label="Colombia">Colombia</option>
+                    <option value="CR" label="Costa Rica">Costa Rica</option>
+                    <option value="CU" label="Cuba">Cuba</option>
+                    <option value="GT" label="Guatemala">Guatemala</option>
+                    <option value="GY" label="Guyana">Guyana</option>
+                    <option value="HT" label="Haiti">Haiti</option>
+                    <option value="HN" label="Honduras">Honduras</option>
+                    <option value="JM" label="Jamaica">Jamaica</option>
+                    <option value="MQ" label="Martinique">Martinique</option>
+                    <option value="MX" label="Mexico">Mexico</option>
+                    <option value="MS" label="Montserrat">Montserrat</option>
+                    <option value="AN" label="Netherlands Antilles">Netherlands Antilles</option>
+                    <option value="NI" label="Nicaragua">Nicaragua</option>
+                    <option value="PA" label="Panama">Panama</option>
+                    <option value="PY" label="Paraguay">Paraguay</option>
+                    <option value="PE" label="Peru">Peru</option>
+                    <option value="PR" label="Puerto Rico">Puerto Rico</option>
+                    <option value="TT" label="Trinidad and Tobago">Trinidad and Tobago</option>
+                    <option value="US" label="United States">United States</option>
+                    <option value="UY" label="Uruguay">Uruguay</option>
+                    <option value="VE" label="Venezuela">Venezuela</option>
+                </optgroup>
+                <optgroup id="country-optgroup-Asia" label="Asia">
+                    <option value="AF" label="Afghanistan">Afghanistan</option>
+                    <option value="AM" label="Armenia">Armenia</option>
+                    <option value="AZ" label="Azerbaijan">Azerbaijan</option>
+                    <option value="CN" label="China">China</option>
+                    <option value="GE" label="Georgia">Georgia</option>
+                    <option value="IR" label="Iran">Iran</option>
+                    <option value="IQ" label="Iraq">Iraq</option>
+                    <option value="IL" label="Israel">Israel</option>
+                    <option value="JP" label="Japan">Japan</option>
+                    <option value="KZ" label="Kazakhstan">Kazakhstan</option>
+                    <option value="KW" label="Kuwait">Kuwait</option>
+                    <option value="NP" label="Nepal">Nepal</option>
+                    <option value="KP" label="North Korea">North Korea</option>
+                    <option value="PH" label="Philippines">Philippines</option>
+                    <option value="QA" label="Qatar">Qatar</option>
+                    <option value="SA" label="Saudi Arabia">Saudi Arabia</option>
+                    <option value="SG" label="Singapore">Singapore</option>
+                    <option value="TW" label="Taiwan">Taiwan</option>
+                    <option value="TJ" label="Tajikistan">Tajikistan</option>
+                    <option value="TH" label="Thailand">Thailand</option>
+                    <option value="TL" label="Timor-Leste">Timor-Leste</option>
+                    <option value="TR" label="Turkey">Turkey</option>
+                    <option value="TM" label="Turkmenistan">Turkmenistan</option>
+                    <option value="AE" label="United Arab Emirates">United Arab Emirates</option>
+                    <option value="UZ" label="Uzbekistan">Uzbekistan</option>
+                    <option value="VN" label="Vietnam">Vietnam</option>
+                    <option value="YE" label="Yemen">Yemen</option>
+                </optgroup>
+                <optgroup id="country-optgroup-Europe" label="Europe">
+                    <option value="AL" label="Albania">Albania</option>
+                    <option value="BE" label="Belgium">Belgium</option>
+                    <option value="BG" label="Bulgaria">Bulgaria</option>
+                    <option value="HR" label="Croatia">Croatia</option>
+                    <option value="CY" label="Cyprus">Cyprus</option>
+                    <option value="CZ" label="Czech Republic">Czech Republic</option>
+                    <option value="FO" label="Faroe Islands">Faroe Islands</option>
+                    <option value="FI" label="Finland">Finland</option>
+                    <option value="FR" label="France">France</option>
+                    <option value="DE" label="Germany">Germany</option>
+                    <option value="GR" label="Greece">Greece</option>
+                    <option value="GG" label="Guernsey">Guernsey</option>
+                    <option value="HU" label="Hungary">Hungary</option>
+                    <option value="ES" label="Spain">Spain</option>
+                    <option value="SE" label="Sweden">Sweden</option>
+                    <option value="CH" label="Switzerland">Switzerland</option>
+                    <option value="UA" label="Ukraine">Ukraine</option>
+                    <option value="GB" label="United Kingdom">United Kingdom</option>
+                    <option value="VA" label="Vatican City">Vatican City</option>
+                    <option value="AX" label="Åland Islands">Åland Islands</option>
+                </optgroup>
+                <optgroup id="country-optgroup-Oceania" label="Oceania">
+                    <option value="AQ" label="Antarctica">Antarctica</option>
+                    <option value="AU" label="Australia">Australia</option>
+                    <option value="MP" label="Northern Mariana Islands">Northern Mariana Islands</option>
+                    <option value="PW" label="Palau">Palau</option>
+                    <option value="PG" label="Papua New Guinea">Papua New Guinea</option>
+                    <option value="WS" label="Samoa">Samoa</option>
+                    <option value="TK" label="Tokelau">Tokelau</option>
+                    <option value="TO" label="Tonga">Tonga</option>
+                </optgroup>
+            </select>
+
+            <label for="validationCustom04" class="form-label">Gender</label>
+            <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value=""></option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other gender</option>
+            </select>
+            <div class="invalid-feedback">
+                Please select a valid state.
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                </label>
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="base-button" type="submit">Submit</button>
+        </div>
+    </form>
+
+    <footer>
+        <div class="row">
+            <div class="col-fluid">
+                <p>Contact <br> tel. 043-345-34-54</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

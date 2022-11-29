@@ -1,0 +1,251 @@
+html {
+    background-color: #ffffff;
+}
+
+body,
+footer,
+.container-fluid,
+.row {
+    background-color: #ffffff;
+    border: 2px solid #5184d8;
+    border-radius: 5px;
+    margin: 5px auto;
+    padding: 10px;
+    font-family: Inter, sans-serif;
+    color: #393a3f;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0px;
+    font-size: 50px;
+    background-color: #ffffff;
+    padding: 0 20px;
+    position: inherit;
+
+}
+
+.box {
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.box:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #393a3f;
+    position: absolute;
+    top: 40%;
+}
+
+.base-button,
+.btn-primary {
+    align-items: center;
+    box-sizing: border-box;
+    margin: 10px 10px 10px 10px;
+    margin-left: auto;
+    padding: 10px 60px 10px 60px;
+    border: 2px solid green;
+    font-size: 18px;
+    font-family: Inter, sans-serif;
+    text-shadow: 2px 4px 3px rgba(253, 234, 234, 0.3);
+    text-transform: uppercase;
+    background-color: #5184d8;
+    border-color: #5184d8;
+    border-radius: 15px/30px;
+    cursor: pointer;
+
+}
+
+.base-button:hover,
+.btn-primary:hover {
+    border: 2px solid #5184d8;
+    background-color: rgb(255, 255, 255);
+    color: #5184d8;
+    cursor: pointer;
+
+}
+
+.form-control,
+.form-select::before {
+    margin: 10px 10px 10px 10px;
+    width: 300px;
+    background-color: #f2f7ff;
+}
+
+
+a,
+.base-button,
+.navbar-toggler,
+.btn-primary {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.nav-item {
+    display: contents;
+
+}
+
+
+
+p {
+    text-align: center;
+}
+
+.col-md-1 {
+    width: 315px;
+    min-height: 325px;
+    display: inline-block;
+    margin: 13px 15px 15px 13px;
+    margin-left: auto;
+    padding: 10px 10px 20px 10px;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 35%, rgba(242, 247, 255, 1) 100%);
+    border: 2px double #5184d8;
+    border-radius: 30px;
+    transition: all 1s ease;
+}
+
+.col-md-1:hover {
+    transform: scale(1.05);
+}
+
+.col-sm {
+    border: 0px solid red;
+}
+
+
+
+button,
+.btn-primary,
+.base-button,
+.navbar-toggler {
+
+    padding: 10px 30px 10px 30px;
+    border: 2px solid #5184d8;
+    border-radius: 15px;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: double;
+    text-transform: uppercase;
+
+}
+
+button:hover {
+    background-color: #5184d8;
+    color: rgb(255, 255, 255);
+}
+
+button:active,
+.btn-primary:active {
+    background-color: #5184d8;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px) translateX(4px);
+}
+
+.btn {
+    border: none;
+    cursor: auto;
+}
+
+.navbar-toggler {
+    padding: 10px 50px 10px 50px;
+    color: #5184d8;
+}
+
+.navbar-collapse {
+    margin: 5px 10px 5px 10px;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid #5184d8;
+    border-collapse: collapse;
+    border-radius: 10px;
+    background-color: #f2f7ff;
+    display: block;
+    box-shadow: 1px 1px 1px 1px #41464b;
+
+}
+
+.navbar-nav {
+    display: flex;
+
+}
+
+.d-flex {
+    display: contents;
+}
+
+.needs-validation {
+    display: list-item;
+    background-image: url(https://img.freepik.com/free-vector/blue-abstract-gradient-wave-vector-background_53876-111548.jpg?w=2000);
+}
+
+.col-md-4 {
+    font-size: 18px;
+    border: 0px solid red;
+    margin: 20px 5px 5px 20px;
+    padding: 20px 20px 20px 20px;
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-12 {
+    border: 0px solid red;
+    margin: 5px 5px 5px 2px;
+    padding: 2px 2px 2px 2px;
+    text-align: center;
+}
+
+.form-check .form-check-input {
+    float: none;
+}
+
+.col-info {
+    display: block;
+}
+
+@media (max-width: 1240px) {
+
+    .navbar-expand-sm .navbar-nav,
+    .d-md-flex {
+        display: inline-grid;
+    }
+}
+
+@media (max-width: 1381) {
+    .row {
+        flex: auto;
+    }
+}
+
+@media (max-width: 930px) {
+    .d-md-flex {
+        flex-direction: column;
+        border: 0px solid #5184d8;
+    }
+}
+
+@media (max-width: 790px) {
+    .navbar-expand-sm .navbar-collapse {
+        flex-direction: column;
+        border: 2px solid #5184d8;
+    }
+}
+
+@media (max-width: 575px) {
+    .navbar-expand-sm .navbar-collapse {
+        flex-direction: column;
+        border: 2px solid #5184d8;
+    }
+}
