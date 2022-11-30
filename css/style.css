@@ -15,6 +15,7 @@ footer,
     color: #393a3f;
     box-sizing: border-box;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 h1 {
