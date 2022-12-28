@@ -15,6 +15,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <title>Lemon menu</title>
   </head>
 
@@ -74,67 +75,14 @@
       </nav>
     </header>
 
-    <div class="box">
-      <h1>Our Menu</h1>
-    </div>
-    <div class="row">
-      <div class="col-md-1">
-        <h2 class="menu">Pizza</h2>
-        <div>
-          <div class="col-sm">
-            <p>chickie, herbs and spices.</p>
-            <img
-              src="images/falafel.png"
-              width="240"
-              height="135"
-              alt="falafel"
-            />
-            <div class="btn">
-              <p>10.00$</p>
-              <button type="button" class="button">Add +</button>
-            </div>
-          </div>
-        </div>
+    <div class="game-container">
+      <div id="gameover">
+        <div id="start">Start Game!</div>
+        <img src="images/youwon.png" alt="" id="youwon" />
+        <img src="images/gameover.png" alt="" id="youlose" />
+        <div id="restart">Play Again!</div>
       </div>
-      <div class="col-md-1">
-        <h2 class="menu">Pasta</h2>
-        <div>
-          <div class="col-sm">
-            <p>lettuce, vegetables and mazzarella.</p>
-            <img src="images/salad.png" width="240" height="135" alt="salat" />
-            <div class="btn">
-              <p>15.00$</p>
-              <button type="button" class="button">Add +</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1">
-        <h2 class="menu">Soup</h2>
-        <div>
-          <div class="col-sm">
-            <p>garlick, tomato, potatoes and spices.</p>
-            <img src="images/soup.png" width="240" height="135" alt="falafel" />
-            <div class="btn">
-              <p>7.00$</p>
-              <button type="button" class="button">Add +</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-1">
-        <h2 class="menu">Burger</h2>
-        <div>
-          <div class="col-sm">
-            <p>meat, chease, cherry and bread.</p>
-            <img src="images/soup.png" width="240" height="135" alt="falafel" />
-            <div class="btn disabled">
-              <p>25.00$</p>
-              <button type="button">Add +</button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <canvas id="breakOut" width="400" height="500"></canvas>
     </div>
     <footer>
       <div class="row">
@@ -146,6 +94,8 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+
+    <script src="js/components.js"></script>
+    <script src="js/game.js"></script>
   </body>
 </html>
