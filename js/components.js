@@ -12,9 +12,8 @@ LIFE_IMG.src = 'images/life.png';
 
 const SCORE_IMG = new Image();
 SCORE_IMG.src = 'images/score.png';
-/*
+
 const BONES_BRICKS_IMG = new Image();
-BONES_BRICKS.src = 'images/bonesBrick.png';
-*/
+BONES_BRICKS_IMG.src = 'images/bonesBrick.png';
 
 /////// END LOAD IMAGES ////////

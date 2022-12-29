@@ -273,7 +273,8 @@ button:active,
   left: 0px;
   display: none;
 }
-#restart {
+
+#start {
   position: absolute;
   top: 310px;
   left: 155px;

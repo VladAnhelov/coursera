@@ -13,7 +13,7 @@ const PADDLE_WIDTH = 100;
 const PADDLE_MARGIN_BOTTOM = 50;
 const PADDLE_HEIGHT = 20;
 const BALL_RADIUS = 8;
-let LIFE = 3; // PLAYER HAS 3 LIVES
+let LIFE = 1; // PLAYER HAS 3 LIVES
 let SCORE = 0;
 const SCORE_UNIT = 10;
 let LEVEL = 1;
@@ -21,6 +21,12 @@ const MAX_LEVEL = 3;
 let GAME_OVER = false;
 let leftArrow = false;
 let rightArrow = false;
+const gameover = document.getElementById('gameover');
+const youwin = document.getElementById('youwin');
+const youlose = document.getElementById('youlose');
+const restart = document.getElementById('restart');
+const start = document.getElementById('start');
+let playing = false;
 
 // CREATE THE PADDLE
 const paddle = {
@@ -150,8 +156,6 @@ const brick = {
   offSetLeft: 20,
   offSetTop: 20,
   marginTop: 40,
-  fillColor: '#5184d8',
-  strokeColor: '#FFF',
 };
 
 let bricks = [];
@@ -182,10 +186,7 @@ function drawBricks() {
       // if the brick isn't broken
       if (b.status) {
         ctx.fillStyle = brick.fillColor;
-        ctx.fillRect(b.x, b.y, brick.width, brick.height);
-
-        ctx.strokeStyle = brick.strokeColor;
-        ctx.strokeRect(b.x, b.y, brick.width, brick.height);
+        ctx.drawImage(BONES_BRICKS_IMG, b.x, b.y, brick.width, brick.height);
       }
     }
   }
@@ -305,18 +306,10 @@ function loop() {
 }
 loop();
 
-// SHOW GAME OVER MESSAGE
-/* SELECT ELEMENTS */
-const gameover = document.getElementById('gameover');
-const youwin = document.getElementById('youwin');
-const youlose = document.getElementById('youlose');
-const restart = document.getElementById('restart');
-const start = document.getElementById('start');
-
 // CLICK ON PLAY AGAIN BUTTON
-restart.addEventListener('click', function () {
-  location.reload(); // reload the page
-});
+//restart.addEventListener('click', function () {
+//  location.reload(); // reload the page
+//});
 
 // SHOW YOU WIN
 function showYouWin() {
