@@ -274,13 +274,16 @@ button:active,
   display: none;
 }
 
-#start {
+#start-button {
   position: absolute;
   top: 310px;
-  left: 155px;
+  left: 140px;
   cursor: pointer;
-  font-size: 1.25em;
-  color: black;
+  width: 150px;
+}
+
+#start-button:active {
+  transform: translateY(4px) translateX(4px);
 }
 
 #restart {
