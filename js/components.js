@@ -16,4 +16,10 @@ SCORE_IMG.src = 'images/score.png';
 const BONES_BRICKS_IMG = new Image();
 BONES_BRICKS_IMG.src = 'images/bonesBrick.png';
 
+const BALL_IMG = new Image();
+BALL_IMG.src = 'images/ball.png';
+
+const START_IMG = new Image();
+START_IMG.src = 'images/start.png';
+
 /////// END LOAD IMAGES ////////

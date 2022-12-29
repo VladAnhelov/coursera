@@ -185,7 +185,6 @@ function drawBricks() {
       let b = bricks[r][c];
       // if the brick isn't broken
       if (b.status) {
-        ctx.fillStyle = brick.fillColor;
         ctx.drawImage(BONES_BRICKS_IMG, b.x, b.y, brick.width, brick.height);
       }
     }
@@ -304,12 +303,23 @@ function loop() {
     requestAnimationFrame(loop);
   }
 }
-loop();
+
+function startGame() {
+  start.addEventListener('click', function () {
+    playing = true;
+    if (playing) {
+      start.style.display = 'none';
+      loop();
+    }
+  });
+}
+
+startGame();
 
 // CLICK ON PLAY AGAIN BUTTON
-//restart.addEventListener('click', function () {
-//  location.reload(); // reload the page
-//});
+restart.addEventListener('click', function () {
+  location.reload(); // reload the page
+});
 
 // SHOW YOU WIN
 function showYouWin() {
