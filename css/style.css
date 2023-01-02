@@ -252,6 +252,7 @@ button:active,
   top: 465px;
   left: 15px;
 }
+
 #gameover {
   position: absolute;
   width: 400px;
@@ -259,6 +260,7 @@ button:active,
   background: rgba(0, 0, 0, 0.5);
   display: none;
 }
+
 #youwon {
   width: 100px;
   position: absolute;
@@ -266,6 +268,7 @@ button:active,
   left: 150px;
   display: none;
 }
+
 #youlose {
   width: 400px;
   position: absolute;

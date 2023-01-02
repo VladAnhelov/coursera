@@ -4,7 +4,7 @@ const ctx = cvs.getContext('2d');
 
 // ADD BORDER TO CANVAS
 cvs.style.border = '2px solid #5184d8';
-
+cvs.style.backgroundImage = 'url(images/bibs.jpg)';
 // MAKE LINE THIK WHEN DRAWING TO CANVAS
 ctx.lineWidth = 3;
 
@@ -305,6 +305,8 @@ function loop() {
 }
 
 function startGame() {
+  drawPaddle();
+  drawBall();
   start.addEventListener('click', function () {
     playing = true;
     if (playing) {
