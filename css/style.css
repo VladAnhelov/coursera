@@ -209,35 +209,40 @@ button:active,
 
 @media (max-width: 1240px) {
   .navbar-expand-sm .navbar-nav,
-  .d-md-flex {
+  .d-md-flex .game-container {
     display: inline-grid;
+    align-items: center;
   }
 }
 
 @media (max-width: 1381) {
-  .row {
+  .row .game-container {
     flex: auto;
+    align-items: center;
   }
 }
 
 @media (max-width: 930px) {
-  .d-md-flex {
+  .d-md-flex .game-container {
     flex-direction: column;
     border: 0px solid #5184d8;
+    align-items: center;
   }
 }
 
 @media (max-width: 790px) {
-  .navbar-expand-sm .navbar-collapse {
+  .navbar-expand-sm .navbar-collapse .game-container {
     flex-direction: column;
     border: 2px solid #5184d8;
+    align-items: center;
   }
 }
 
 @media (max-width: 575px) {
-  .navbar-expand-sm .navbar-collapse {
+  .navbar-expand-sm .navbar-collapse .game-container {
     flex-direction: column;
     border: 2px solid #5184d8;
+    align-items: center;
   }
 }
 
@@ -257,6 +262,7 @@ button:active,
 .game-container {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
 }
 
 #sound {
