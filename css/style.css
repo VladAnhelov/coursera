@@ -311,6 +311,45 @@ button:active,
   transform: translateY(4px) translateX(4px);
 }
 
+.dropdown {
+  position: absolute;
+  left: 130px;
+  bottom: 200px;
+}
+
+#settings {
+  position: absolute;
+  left: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding: 54px 54px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.diff {
+  color: #ffffff;
+  cursor: pointer;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.diff:hover {
+  color: rgb(176, 176, 176);
+}
+
+.diff:active {
+  color: #ffcd05;
+  transform: translateY(4px) translateX(4px);
+}
+
 #restart {
   position: absolute;
   top: 310px;

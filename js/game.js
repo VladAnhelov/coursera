@@ -26,6 +26,13 @@ const youwin = document.getElementById('youwin');
 const youlose = document.getElementById('youlose');
 const restart = document.getElementById('restart');
 const start = document.getElementById('start-button');
+const difficult = document.getElementById('dropdiff');
+const settings = document.getElementById('settings');
+const dropDifficult = document.getElementById('myDropdown');
+const easy = document.getElementById('easy');
+const medium = document.getElementById('medium');
+const hard = document.getElementById('hard');
+
 let playing = false;
 
 // CREATE THE PADDLE
@@ -303,16 +310,49 @@ function loop() {
     requestAnimationFrame(loop);
     start.style.display = 'none';
     restart.style.display = 'block';
+    settings.style.display = 'none';
   }
 }
+
+function chooseDifficult() {
+  dropDifficult.classList.toggle('show');
+  easy.addEventListener('click', function () {
+    ball.speed = 3;
+    console.log(ball.speed);
+  });
+  medium.addEventListener('click', function () {
+    ball.speed = 4;
+    console.log(ball.speed);
+  });
+  hard.addEventListener('click', function () {
+    ball.speed = 6;
+    console.log(ball.speed);
+  });
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName('dropdown-content');
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+};
 
 function startGame() {
   drawPaddle();
   drawBall();
+  chooseDifficult();
   gameover.style.display = 'block';
   restart.style.display = 'none';
   start.addEventListener('click', function () {
     gameover.style.display = 'none';
+
     loop();
   });
 }

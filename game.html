@@ -16,7 +16,7 @@
     ></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <title>Lemon menu</title>
+    <title>Vlad Anhelov</title>
   </head>
 
   <body>
@@ -79,6 +79,15 @@
     </div>
     <div class="game-container">
       <div id="gameover">
+        <div class="dropdown" onclick="chooseDifficult()" class="dropbtn">
+          <img src="/images/settings.png" id="settings" />
+          <div id="myDropdown" class="dropdown-content">
+            <p class="diff" id="easy">Easy</p>
+            <p class="diff" id="medium">Medium</p>
+            <p class="diff" id="hard">Hard</p>
+            </p>
+          </div>
+        </div>
         <img src="/images/start.png" id="start-button" />
         <img src="images/youwon.png" alt="" id="youwon" />
         <img src="images/gameover.png" alt="" id="youlose" />
