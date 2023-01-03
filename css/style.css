@@ -294,10 +294,11 @@ button:active,
 
 #start-button {
   position: absolute;
-  top: 310px;
-  left: 140px;
   cursor: pointer;
+  left: 130px;
+  bottom: 220px;
   width: 150px;
+  height: 60px;
 }
 
 #start-button:active {

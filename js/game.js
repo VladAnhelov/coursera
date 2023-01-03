@@ -25,7 +25,7 @@ const gameover = document.getElementById('gameover');
 const youwin = document.getElementById('youwin');
 const youlose = document.getElementById('youlose');
 const restart = document.getElementById('restart');
-const start = document.getElementById('start');
+const start = document.getElementById('start-button');
 let playing = false;
 
 // CREATE THE PADDLE
@@ -301,18 +301,19 @@ function loop() {
 
   if (!GAME_OVER) {
     requestAnimationFrame(loop);
+    start.style.display = 'none';
+    restart.style.display = 'block';
   }
 }
 
 function startGame() {
   drawPaddle();
   drawBall();
+  gameover.style.display = 'block';
+  restart.style.display = 'none';
   start.addEventListener('click', function () {
-    playing = true;
-    if (playing) {
-      start.style.display = 'none';
-      loop();
-    }
+    gameover.style.display = 'none';
+    loop();
   });
 }
 
