@@ -313,21 +313,19 @@ button:active,
 
 .dropdown {
   position: absolute;
-  left: 130px;
-  bottom: 200px;
 }
 
 #settings {
   position: absolute;
-  left: 50px;
-  width: 50px;
-  height: 50px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  padding: 54px 54px;
+  padding: 30px 10px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -335,6 +333,7 @@ button:active,
 }
 
 .diff {
+  font-size: 14px;
   color: #ffffff;
   cursor: pointer;
   text-align: left;
