@@ -130,6 +130,18 @@ footer,
   background-color: #ffffff;
   padding: 10px;
   margin: 20px 0px 8px 0px;
+  overflow-x: hidden;
+  height: calc(100vh - 50px);
+  transition: 0.5s;
+}
+
+@keyframes open-menu {
+  0% {
+    height: 50%;
+  }
+  100% {
+    height: 100%;
+  }
 }
 
 .mobile-menu {
@@ -137,8 +149,9 @@ footer,
   position: absolute;
   top: 50px;
   left: 0;
-  height: calc(100vh - 50px);
   width: 100%;
+  animation-name: open-menu;
+  animation-duration: 0.1s;
 }
 
 @media only screen and (max-width: 1094px) {
