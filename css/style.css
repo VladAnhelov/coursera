@@ -16,7 +16,7 @@ footer,
   display: inline-flex;
   top: 0;
   width: 100%;
-  border: 1px solid black;
+  justify-content: space-between;
   height: 70px;
   position: fixed;
   background-color: #ffffff;
@@ -129,7 +129,7 @@ footer,
   justify-content: flex-start;
   background-color: #ffffff;
   padding: 10px;
-  margin: 20px 0px 8px 0px;
+  margin: 19px 0px 8px 0px;
   overflow-x: hidden;
   height: calc(100vh - 50px);
   transition: 0.5s;
@@ -154,13 +154,12 @@ footer,
   animation-duration: 0.1s;
 }
 
-@media only screen and (max-width: 1094px) {
+@media only screen and (max-width: 800px) {
   .nav-bar {
     display: none;
   }
   #humburger-icon {
     display: block;
-    width: 100%;
   }
 }
 
@@ -191,17 +190,55 @@ h1 {
   top: 40%;
 }
 
-.base-button {
-  box-sizing: border-box;
-  margin: 10px 10px 10px 10px;
-  padding: 10px 60px 10px 60px;
-  font-size: 18px;
-  font-family: Inter, sans-serif;
-  text-shadow: 2px 4px 3px rgba(253, 234, 234, 0.3);
-  background-color: #5184d8;
+.custom-btn {
+  width: 150px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
 }
 
-.base-button:hover,
+.btn-16 {
+  border: none;
+  color: #000;
+}
+.btn-16:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.btn-16:hover {
+  color: #000;
+}
+.btn-16:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn-16:active {
+  top: 2px;
+}
+
 .btn-primary:hover {
   border: 2px solid #5184d8;
   background-color: rgb(255, 255, 255);
@@ -217,7 +254,6 @@ h1 {
 }
 
 a,
-.base-button,
 .btn-primary {
   color: #ffffff;
   text-decoration: none;
@@ -260,7 +296,6 @@ p {
 
 buttons,
 .btn-primary,
-.base-button,
 .navbar-toggler {
   border: 2px solid #5184d8;
   border-radius: 15px;
