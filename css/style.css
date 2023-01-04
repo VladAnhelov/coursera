@@ -4,19 +4,45 @@ html {
 
 body,
 footer,
-.container-fluid,
-.container,
 .row {
   background-color: #ffffff;
-  border: 2px solid #5184d8;
-  border-radius: 5px;
   margin: 5px auto;
-  padding: 10px;
   font-family: Inter, sans-serif;
   color: #393a3f;
   box-sizing: border-box;
-  justify-content: center;
+}
+
+.header-layout {
+  top: 0;
+  width: 100%;
+  border: 1px solid black;
+  height: 70px;
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.header-container {
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.nav-bar {
+  display: flex;
+  padding: 10px;
+}
+
+.img-brand {
+  width: 100px;
+}
+
+.desktop-menu {
+  margin: 5px 5px;
 }
 
 h1 {
@@ -46,22 +72,14 @@ h1 {
   top: 40%;
 }
 
-.base-button,
-.btn-primary {
-  align-items: center;
+.base-button {
   box-sizing: border-box;
   margin: 10px 10px 10px 10px;
-  margin-left: auto;
   padding: 10px 60px 10px 60px;
-  border: 2px solid green;
   font-size: 18px;
   font-family: Inter, sans-serif;
   text-shadow: 2px 4px 3px rgba(253, 234, 234, 0.3);
-  text-transform: uppercase;
   background-color: #5184d8;
-  border-color: #5184d8;
-  border-radius: 15px/30px;
-  cursor: pointer;
 }
 
 .base-button:hover,
@@ -81,11 +99,9 @@ h1 {
 
 a,
 .base-button,
-.navbar-toggler,
 .btn-primary {
   color: #ffffff;
   text-decoration: none;
-  text-align: center;
 }
 
 .nav-item {
@@ -127,12 +143,10 @@ button,
 .btn-primary,
 .base-button,
 .navbar-toggler {
-  padding: 10px 30px 10px 30px;
   border: 2px solid #5184d8;
   border-radius: 15px;
   align-items: center;
   cursor: pointer;
-  text-decoration: double;
   text-transform: uppercase;
 }
 
@@ -156,21 +170,6 @@ button:active,
 .navbar-toggler {
   padding: 10px 50px 10px 50px;
   color: #5184d8;
-}
-
-.navbar-collapse {
-  margin: 5px 10px 5px 10px;
-  padding: 10px 10px 10px 10px;
-  border: 2px solid #5184d8;
-  border-collapse: collapse;
-  border-radius: 10px;
-  background-color: #f2f7ff;
-  display: block;
-  box-shadow: 1px 1px 1px 1px #41464b;
-}
-
-.navbar-nav {
-  display: flex;
 }
 
 .d-flex {
@@ -207,15 +206,21 @@ button:active,
   display: block;
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 900px) {
   .navbar-expand-sm .navbar-nav,
-  .d-md-flex .game-container {
+  .d-md-flex .game-container .container-fluid {
+    align-items: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .container-fluid {
     display: inline-grid;
     align-items: center;
   }
 }
 
-@media (max-width: 1381) {
+@media (max-width: 900) {
   .row .game-container {
     flex: auto;
     align-items: center;

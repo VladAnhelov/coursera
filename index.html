@@ -19,31 +19,16 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <div class="container-fluid">
-          <div class="navbar-brand">
-            <a href="#" class="navbar-brand">
-              <img
-              src="https://logos.textgiraffe.com/logos/logo-name/Vlad-designstyle-pastel-m.png"
-              style="width:100px;height:100px;"
-            </a>
-          </div>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <header class="header-layout">
+      <div class="header-container">
+        <div class="brand">
+          <a href="#"> 
+          <img class="img-brand"
+            src="images/vladlogo.png">
+          </a>
+        </div>
+      <nav class="nav-bar">
+            <ul class="desktop-menu">
               <li class="nav-item">
                 <a href="index.html" class="base-button">Menu</a>
               </li>
@@ -57,21 +42,9 @@
                 <a href="game.html" class="base-button">Game</a>
               </li>
             </ul>
-
-            <form class="d-md-flex">
-              <input
-                id="myInput"
-                onkeyup="myFunction()"
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="base-button" type="submit">Search</button>
-            </form>
-          </div>
         </div>
       </nav>
+    </div>
     </header>
 
     <div class="box">
