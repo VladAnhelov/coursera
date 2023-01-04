@@ -1,0 +1,92 @@
+#sound {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 465px;
+  left: 15px;
+}
+
+#gameover {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+#youwon {
+  width: 100px;
+  position: absolute;
+  top: 200px;
+  left: 150px;
+  display: none;
+}
+
+#youlose {
+  width: 400px;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  display: none;
+}
+
+#start-button {
+  position: absolute;
+  cursor: pointer;
+  left: 130px;
+  bottom: 220px;
+  width: 150px;
+  height: 60px;
+}
+
+#start-button:active {
+  transform: translateY(4px) translateX(4px);
+}
+
+.dropdown {
+  position: absolute;
+}
+
+#settings {
+  position: absolute;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  padding: 30px 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.diff {
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.diff:hover {
+  color: rgb(176, 176, 176);
+}
+
+.diff:active {
+  color: #ffcd05;
+  transform: translateY(4px) translateX(4px);
+}
+
+#restart {
+  position: absolute;
+  top: 310px;
+  left: 155px;
+  cursor: pointer;
+  font-size: 1.25em;
+  color: white;
+}
