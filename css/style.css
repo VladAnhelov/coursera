@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
 html {
-  background: whitesmoke;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 
 body {
   background: whitesmoke;
+  font-family: 'Poppins', sans-serif;
   margin: 70px auto;
-  font-family: Inter, sans-serif;
   color: #393a3f;
   box-sizing: border-box;
 }
@@ -272,7 +275,6 @@ input:checked + .slider:before {
   color: #fff;
   border-radius: 5px;
   padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   background: transparent;
