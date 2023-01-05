@@ -126,11 +126,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   background-color: #ffffff;
   padding: 10px;
   margin: 19px 0px 8px 0px;
   overflow-x: hidden;
-  height: calc(100vh - 50px);
+  height: calc(500vh - 50px);
   transition: 0.5s;
 }
 
@@ -151,15 +152,6 @@ body {
   width: 100%;
   animation-name: open-menu;
   animation-duration: 0.1s;
-}
-
-@media only screen and (max-width: 800px) {
-  .nav-bar {
-    display: none;
-  }
-  #humburger-icon {
-    display: block;
-  }
 }
 
 .custom-btn {
@@ -237,9 +229,9 @@ p {
 }
 
 .container {
-  display: block;
+  display: flex;
   justify-content: space-between;
-  margin: 80px;
+  flex-wrap: wrap;
 }
 
 .heading-text {
@@ -272,7 +264,6 @@ sup {
 
 .pic {
   border-radius: 4px;
-  box-shadow: 10px #393a3f;
   cursor: pointer;
   transition: 0.3s;
   width: 400px;
@@ -291,6 +282,8 @@ sup {
 }
 
 .dog {
+  margin: 30px;
+  border-radius: 4px;
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -378,13 +371,6 @@ sup {
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%;
-  }
-}
-
 .game-container {
   display: flex;
   flex-direction: row;
@@ -394,4 +380,55 @@ sup {
 .discribe {
   font-size: 20px;
   font-style: oblique;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 994px) {
+  .section-1,
+  .section-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .dog {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 666px) {
+  .intro {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .heading-text {
+    font-size: 15px;
+  }
+
+  .pic {
+    width: 200px;
+    height: 250px;
+  }
+  .dog {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-bar {
+    display: none;
+  }
+  #humburger-icon {
+    display: block;
+  }
+  .custom-btn {
+    width: 100%;
+  }
 }
