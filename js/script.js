@@ -7,8 +7,13 @@ var modalImg = document.getElementById('img01');
 var captionText = document.getElementById('caption');
 var span = document.getElementsByClassName('close')[0];
 let buttonTop = document.getElementById('topBtn');
+let darkBody = document.body;
 
 // click add button to make a order
+
+function darkMode() {
+  darkBody.classList.toggle('dark-mode');
+}
 
 for (let i = 0; i < button.length; i++)
   button[i].addEventListener('click', function () {
