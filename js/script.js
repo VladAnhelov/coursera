@@ -1,6 +1,13 @@
 'use strict';
 
 let button = document.querySelectorAll('.button');
+var modal = document.getElementById('myModal');
+var img = document.querySelectorAll('.pic');
+var modalImg = document.getElementById('img01');
+var captionText = document.getElementById('caption');
+var span = document.getElementsByClassName('close')[0];
+let buttonTop = document.getElementById('topBtn');
+
 // click add button to make a order
 
 for (let i = 0; i < button.length; i++)
@@ -20,12 +27,9 @@ document.querySelectorAll('.menu').forEach((btn) => {
 });
 
 // Get the modal
-var modal = document.getElementById('myModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.querySelectorAll('.pic');
-var modalImg = document.getElementById('img01');
-var captionText = document.getElementById('caption');
+
 for (let i = 0; i < img.length; i++) {
   img[i].onclick = function () {
     modal.style.display = 'block';
@@ -35,7 +39,6 @@ for (let i = 0; i < img.length; i++) {
 }
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName('close')[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
@@ -45,3 +48,20 @@ span.onclick = function () {
 modal.onclick = function () {
   modal.style.display = 'none';
 };
+
+window.onscroll = function () {
+  scrollTop();
+};
+
+function scrollTop() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    buttonTop.style.display = 'block';
+  } else {
+    buttonTop.style.display = 'none';
+  }
+}
+
+function topButton() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
