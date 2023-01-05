@@ -243,6 +243,24 @@ p {
   margin: 80px;
 }
 
+.heading-text {
+  display: flex;
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 10px;
+}
+
+sup {
+  font-size: 15px;
+}
+
+.heading-2-text {
+  display: flex;
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 10px;
+}
+
 .section-1 {
   display: flex;
 }
@@ -253,11 +271,9 @@ p {
   justify-content: space-between;
 }
 
-.dog {
-  border: 1px solid gray;
-}
-
 .pic {
+  border-radius: 4px;
+  box-shadow: 10px #393a3f;
   cursor: pointer;
   transition: 0.3s;
   width: 400px;
