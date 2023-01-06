@@ -568,14 +568,37 @@ sup {
   #humburger-icon div {
     display: block;
   }
-  .open .mobile-menu .btn-log {
+
+  .open .mobile-menu .mobile-reg {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    direction: initial;
+    margin: 15px;
+    padding: 10px;
   }
-  .open .mobile-menu .btn-reg {
-    display: flex;
-    width: 100%;
-  }
+}
+.open .mobile-menu .btn-log {
+  display: flex;
+  width: auto;
+  margin: 10px 10px 10px 10px;
+}
+.open .mobile-menu .btn-log:hover {
+  color: dodgerblue;
+}
+
+.open .mobile-menu .mobile-reg .btn-reg {
+  display: flex;
+  width: auto;
+  margin: 10px 10px 10px 10px;
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+.open .mobile-menu .btn-reg:hover {
+  background-color: rgb(255, 255, 255);
+  color: dodgerblue;
+  margin: 15px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -609,14 +632,13 @@ sup {
   }
   .btn-16 {
     width: 100%;
+    margin: 5px;
+    align-items: center;
   }
   .reg {
     width: 50%;
   }
-  .mobile-menu .btn-log {
-    display: none;
-  }
-  .mobile-menu .btn-reg {
+  .mobile-reg {
     display: none;
   }
 }
