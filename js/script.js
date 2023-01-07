@@ -8,8 +8,17 @@ var captionText = document.getElementById('caption');
 var span = document.getElementsByClassName('close')[0];
 let buttonTop = document.getElementById('topBtn');
 let darkBody = document.body;
+let login = document.querySelector('.btn-log');
+let modalLogin = document.querySelector('.login-modal');
+let closeModalLogin = document.querySelector('.close-modal');
 
-// click add button to make a order
+login.onclick = function () {
+  modalLogin.style.display = 'flex';
+};
+
+closeModalLogin.onclick = function () {
+  modalLogin.style.display = 'none';
+};
 
 function darkMode() {
   darkBody.classList.toggle('dark-mode');
