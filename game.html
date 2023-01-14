@@ -109,64 +109,30 @@
     </ul>
     </div>
     </header>
-<div class="container">
-  <section class="wrapper-section">
-    <div class="section-1">
-<div>
-  <h1 class="heading-text">Hello there!</h1>
-  <p class="intro"> My name is Vlad and want to be a Front-End developer. <br>
-    This my first test project 
-    and I dedicate this project to my dog.</p>
-</div>
-<div class="dog">
-  <img src="images/BibiAndVlad.png" class="pic" id="pic" alt="We are on a walk">
-  <!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
-</div>
-</div>
-</section>
-<section class="wrapper-section">
-  <div class="section-2">
-  <div>
-    <h3 class="heading-2-text">Bibi is a beagle<sup>2</sup></h3>
-    <p class="intro"> 
-       Her name is Bibi. She is a almost two years old but she is still a pappy.</p>
-  </div>
-  <div class="dog">
-    <img src="images/bibi-1.png" class="pic" id="pic" alt="Bibi is watching you">
-    <!-- The Modal -->
-  <div id="myModal" class="modal">
-    <span class="close">&times;</span>
-    <img class="modal-content" id="img01">
-    <div id="caption"></div>
-  </div>
-  </div>
-</div>
-</section>
-<section class="wrapper-section">
-  <div class="section-1">
-<div>
-<h1 class="heading-text">Hello there!</h1>
-<p class="intro"> My name is Vlad and want to be a Front-End developer. <br>
-  This my first test project 
-  and I dedicate this project to my dog.</p>
-</div>
-<div class="dog">
-<img src="images/bibi-2.JPG" class="pic" id="pic" alt="Bibi">
-<!-- The Modal -->
-<div id="myModal" class="modal">
-<span class="close">&times;</span>
-<img class="modal-content" id="img01">
-<div id="caption"></div>
-</div>
-</div>
-</div>
-</section>
-</div>
+    <div class="box">
+      <h1>Breakout game</h1>
+    </div>
+    <div class="game-container">
+      <div id="gameover">
+        <div class="dropdown" onclick="chooseDifficult()" class="dropbtn">
+          <img src="/images/settings.png" id="settings" />
+          <div id="myDropdown" class="dropdown-content">
+            <p class="diff" id="easy">Easy</p>
+            <p class="diff" id="medium">Medium</p>
+            <p class="diff" id="hard">Hard</p>
+            </p>
+          </div>
+        </div>
+        <img src="/images/start.png" id="start-button" />
+        <img src="images/youwon.png" alt="" id="youwon" />
+        <img src="images/gameover.png" alt="" id="youlose" />
+        <div id="restart">Play Again!</div>
+      </div>
+      <canvas id="breakOut" width="400" height="500"></canvas>
+      <div class="discribe">
+        <p>Hi there! This is my first game written in JavaScript.</p>
+      </div>
+    </div>
     <footer>
       <div class="row">
         <div class="col-fluid">
@@ -180,6 +146,7 @@
     <button onclick="topButton()" id="topBtn">
       <img src="images/up-arrow.png"
     </button>
-    <script src="js/script.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/components.js"></script>
   </body>
 </html>
