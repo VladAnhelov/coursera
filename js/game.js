@@ -1,3 +1,4 @@
+'use strict';
 // SELECT CANVAS ELEMENT
 const cvs = document.getElementById('breakOut');
 const ctx = cvs.getContext('2d');
