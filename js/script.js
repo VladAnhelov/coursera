@@ -12,11 +12,11 @@ let login = document.querySelector('.btn-log');
 let modalLogin = document.querySelector('.login-modal');
 let closeModalLogin = document.querySelector('.close-modal');
 
-login.onclick = function () {
+login.onclick = () => {
   modalLogin.style.display = 'flex';
 };
 
-closeModalLogin.onclick = function () {
+closeModalLogin.onclick = () => {
   modalLogin.style.display = 'none';
 };
 
