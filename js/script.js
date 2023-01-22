@@ -49,3 +49,9 @@ function topButton() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+var longestCommonPrefix = function (strs) {
+  return strs;
+};
+
+console.log(longestCommonPrefix(['flower', 'flow', 'flight']));

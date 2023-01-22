@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 let signInButton = document.querySelector('.btn-log');
 
 let modalOfLoginForm = document.querySelector('.login-modal');
@@ -22,7 +22,8 @@ submitLoginForm.addEventListener('click', (e) => {
   const password = passwordForm.value;
   if (email === 'vlad@gmail.com' && password === '123') {
     alert('You have successfully logged in.');
-    location.reload();
+    modalOfLoginForm.style.display = 'none';
+    //  location.reload();
   } else {
     alert('Wrong password or email');
   }

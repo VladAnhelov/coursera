@@ -19,5 +19,8 @@
   "homepage": "https://github.com/VladAnhelov/coursera#readme",
   "devDependencies": {
     "jest": "^29.3.1"
+  },
+  "dependencies": {
+    "jquery": "^3.6.3"
   }
 }
