@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 let signInButton = document.querySelector('.btn-log');
 
 let modalOfLoginForm = document.querySelector('.login-modal');
@@ -16,8 +16,7 @@ closeModalLoginForm.onclick = () => {
   modalOfLoginForm.style.display = 'none';
 };
 
-submitLoginForm.addEventListener('click', (e) => {
-  e.preventDefault;
+submitLoginForm.addEventListener('click', e => {
   const email = emailForm.value;
   const password = passwordForm.value;
   if (email === 'vlad@gmail.com' && password === '123') {

@@ -15,8 +15,8 @@ function toggleMobileMenu(menu) {
   menu.classList.toggle('open');
 }
 
-document.querySelectorAll('.menu').forEach((btn) => {
-  btn.addEventListener('click', (e) => {
+document.querySelectorAll('.menu').forEach(btn => {
+  btn.addEventListener('click', e => {
     btn.classList.toggle('active');
   });
 });

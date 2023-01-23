@@ -22,8 +22,11 @@ var romanToInt = function (s) {
   )[0];
 };
 
+console.log(romanToInt('III'));
+
 module.exports = romanToInt;
 
+/*
 const symbol = {
   I: 1,
   V: 5,
@@ -37,15 +40,16 @@ const symbol = {
 let result = 0;
 
 for (i = 0; i < s.length; i++) {
-  const cur = symbol[s[i]];
-  const next = symbol[s[i + 1]];
+const cur = symbol[s[i]];
+const next = symbol[s[i + 1]];
 
-  if (cur < next) {
-    result += next - cur; // IV -> 5 - 1 = 4
-    i++;
-  } else {
-    result += cur;
-  }
+if (cur < next) {
+  result += next - cur; // IV -> 5 - 1 = 4
+  i++;
+} else {
+  result += cur;
+}
 }
 
 return result;
+*/
