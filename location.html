@@ -1,14 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test task for SysGears</title>
-    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/loc.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/loc.css" />
+    <title>Vlad Anhelov</title>
   </head>
+
   <body>
+    <header class="header-layout">
+      <div class="header-container">
+        <div class="brand">
+          <a href="#"> 
+          <img class="img-brand"
+            src="images/vladlogo.png">
+          </a>
+        </div>
+      <nav class="nav-bar">
+            <ul class="desktop-menu">
+              <li class="nav-item">
+                <a href="index.html" class="btn-1">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="location.html" class="btn-1">Converter</a>
+              </li>
+              <li class="nav-item">
+                <a href="game.html" class="btn-1">Game</a>
+              </li>
+              <li class="nav-item">
+            <li class="dropdown">
+              <a href="#" class="btn-1">Tasks</a>
+              <div class="dropdown-content">
+                <a href="location.html">Converter</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </li>
+          </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="reg">
+          <a  class="custom-btn btn-16 btn-log">Sign In</a>
+          <div class="login-modal">
+            <div class="modal-log">
+              <div class="top-form">
+                <div class="close-modal">
+                  &#10006;
+                </div>
+              </div>
+              <div class="login-form" id="login-form">
+                <h2>Sign In</h2>
+                <form action="">
+                  <input type="text" class="form-control" placeholder="Email" id="emailForm">
+                  <input type="password" class="form-control" placeholder="Password" id="passwordForm">
+                  <button type="button" class="submit-btn" id="login-form-submit">Login</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <a href="registration.html" class="custom-btn btn-16 btn-reg">Sign Up</a>
+      <div class="toggle">
+<label class="darkToggle">
+  <input type="checkbox" checked onclick="darkMode()" name="darkToggler" id="darkToggler" class="darkToggler">
+  <span class="slider round"></span>
+</label>
+      </div>
+    </div>
+    </div>
+    <div id="humburger-icon" onclick="toggleMobileMenu(this)">
+      <button class="menu">
+        <svg viewBox="0 0 64 48">
+            <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+            <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+            <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+        </svg>
+    </button>
+    <ul class="mobile-menu">
+      <li class="nav-item">
+        <a href="index.html" class="custom-btn btn-16">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="location.html" class="custom-btn btn-16">Location</a>
+      </li>
+      <li class="nav-item">
+        <a href="game.html" class="custom-btn btn-16">Game</a>
+      </li>
+      <ul class="mobile-reg">
+      <li class="nav-item">
+      <a href="registration.html" class="custom-btn btn-16 btn-log">Sign In</a>
+    </li>
+      <li class="nav-item">
+      <a href="registration.html" class="custom-btn btn-16 btn-reg">Sign Up</a>
+    </li>
+  </ul>
+    </ul>
+    </div>
+    </header>
     <div class="container">
       <div>
         <section class="tasks">
@@ -16,13 +118,19 @@
           <form name="uploadForm">
             <div class="converting">
               <div>
-                <input onchange="chooseJsonFile(this);" id="uploadInput" type="file" multiple />
+                <input
+                  onchange="readJsonFiles(output, '#one', this);"
+                  id="uploadInput"
+                  type="file"
+                  multiple
+                />
               </div>
 
               <input
                 onclick="export2txt()"
                 type="submit"
                 class="convertbtn"
+                id="one"
                 value="Download Json File"
                 disabled
               />
@@ -33,8 +141,38 @@
             </div>
           </form>
         </section>
+        <section class="tasks">
+          <h1>Task 2. Include and Sort data</h1>
+          <form name="uploadForm">
+            <div class="converting">
+              <div>
+                <input
+                  onchange="readJsonFiles(output3, '#two', this);"
+                  id="uploadInput2"
+                  type="file"
+                  multiple
+                />
+              </div>
+
+              <input
+                onclick="export2txt()"
+                type="submit"
+                class="convertbtn"
+                id="two"
+                value="Download Json File"
+                disabled
+              />
+            </div>
+            <div class="container-outputs">
+              <div class="output3"></div>
+              <div class="output4"></div>
+            </div>
+          </form>
+        </section>
       </div>
     </div>
     <script src="/js/loc.js"></script>
+    <script src="js/script.js" type="text/babel"></script>
+    <script src="js/modals/loginModal.js" type="text/babel"></script>
   </body>
 </html>

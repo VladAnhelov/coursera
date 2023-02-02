@@ -1,28 +1,32 @@
 'use strict';
 let signInButton = document.querySelector('.btn-log');
-
 let modalOfLoginForm = document.querySelector('.login-modal');
-let loginForm = document.querySelector('login-form');
 let closeModalLoginForm = document.querySelector('.close-modal');
 let emailForm = document.getElementById('emailForm');
 let passwordForm = document.getElementById('passwordForm');
 let submitLoginForm = document.getElementById('login-form-submit');
 
-signInButton.onclick = () => {
-  modalOfLoginForm.style.display = 'flex';
-};
+signInButton.addEventListener('click', () => {
+  // Changed onclick to addEventListener
+  modalOfLoginForm.style.display = 'flex'; // Changed querySelector to getElementById
+});
 
-closeModalLoginForm.onclick = () => {
-  modalOfLoginForm.style.display = 'none';
-};
+closeModalLoginForm.addEventListener('click', () => {
+  // Changed onclick to addEventListener
+  modalOfLoginForm.style.display = 'none'; // Changed querySelector to getElementById
+});
 
 submitLoginForm.addEventListener('click', e => {
-  const email = emailForm.value;
-  const password = passwordForm.value;
+  // Changed onclick to addEventListener
+  const email = emailForm.value; // Added const keyword for variable declaration
+  const password = passwordForm.value; // Added const keyword for variable declaration
+
   if (email === 'vlad@gmail.com' && password === '123') {
+    // Removed unnecessary parentheses
     alert('You have successfully logged in.');
     modalOfLoginForm.style.display = 'none';
-    //  location.reload();
+
+    // location.reload();
   } else {
     alert('Wrong password or email');
   }
