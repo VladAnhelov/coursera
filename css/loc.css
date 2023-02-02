@@ -1,0 +1,66 @@
+body {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tasks {
+  margin: 30px auto;
+  padding: 40px;
+}
+
+#uploadInput {
+  padding: 5px 5px;
+}
+
+.converting {
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.convertbtn {
+  padding: 2px 9px;
+  border-radius: 5px;
+  background-color: #5baa5e;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.convertbtn:hover {
+  background-color: #539e56;
+}
+
+.convertbtn:disabled {
+  background-color: #a94e4e;
+  cursor: default;
+}
+
+.container-outputs {
+  display: flex;
+  justify-content: space-around;
+}
+
+.output {
+  border: 1px solid black;
+  color: black;
+  overflow: scroll;
+  margin: 1rem 0;
+  height: 200px;
+  width: 300px;
+}
+.output2 {
+  border: 1px solid black;
+  color: black;
+  overflow: scroll;
+  margin: 1rem 0;
+  height: 200px;
+  width: 300px;
+}
